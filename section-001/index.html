@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Vue JS Site</title>
+</head>
+
+<body>
+
+    <div id="app">
+    	<!-- Calling a variable -->
+        <p>{{ title }}</p>
+        <!-- Calling a method -->
+        <p>{{ sayHello() }}</p>
+        <button v-on:click="increase">Click Me</button>
+    	<p>{{ counter }}</p>
+    </div>
+<hr>
+    <div id="event">
+    	<p>Listening to events from another Vue instance</p>
+    	<button v-on:click="increase">Click Me</button>
+    	<p>{{ counter }}</p>
+    
+    </div>
+    <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
